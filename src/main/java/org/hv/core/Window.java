@@ -1,7 +1,6 @@
 package org.hv.core;
 
-import org.lwjgl.glfw.GLFWErrorCallback;
-import org.lwjgl.glfw.GLFWVidMode;
+import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.system.MemoryStack;
 
@@ -92,5 +91,17 @@ public class Window {
 
     public long GetHandle() {
         return handle;
+    }
+
+    public int GetWidth() {
+        return width;
+    }
+
+    public int GetHeight() {
+        return height;
+    }
+
+    public String GetTitle() {
+        return title;
     }
 }
